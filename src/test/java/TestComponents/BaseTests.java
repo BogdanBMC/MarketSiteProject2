@@ -28,7 +28,7 @@ public WebDriver initialiseDriver(){
 
 }
 
-@BeforeMethod(alwaysRun = true) // ASTA RULEAZA ORICUM NU MAI LUA TEAPA ASTA PLM
+@BeforeMethod(alwaysRun = true) // ASTA RULEAZA ORICUM NU MAI LUA TEAPA ASTA PLM/ daia se initializeza driveru dublu
 public LoginPage openPage(){
     driver= initialiseDriver();
     loginPage = new LoginPage(driver);
